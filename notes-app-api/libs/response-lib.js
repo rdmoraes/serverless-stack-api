@@ -9,6 +9,7 @@ export function success(body) {
   function buildResponse(statusCode, body) {
     return {
       statusCode: statusCode,
+      // Set response headers to enable CORS (Cross-Origin Resource Sharing)
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Credentials": true
